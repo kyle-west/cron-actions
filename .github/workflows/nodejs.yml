@@ -1,6 +1,8 @@
 name: Node CI
 
-on: [push]
+on:
+  schedule:
+    - cron:  '0 * * * *' # every hour
 
 jobs:
   build:
@@ -17,7 +19,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - name: npm install, and run
       run: |
         npm install
         npm start
