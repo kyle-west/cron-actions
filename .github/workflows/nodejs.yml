@@ -2,7 +2,7 @@ name: Node CI
 
 on:
   schedule:
-    - cron:  '* * * * *' # every hour
+    - cron:  '0 * * * *' # every hour
 
 jobs:
   build:
