@@ -1,0 +1,22 @@
+{
+  "name": "cron-actions",
+  "version": "0.1.0",
+  "description": "Test out Github Actions by setting up a simple set of cron jobs (like tests and other stuff)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "bash bin/run-tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kyle-west/cron-actions.git"
+  },
+  "author": "kyle-west",
+  "bugs": {
+    "url": "https://github.com/kyle-west/cron-actions/issues"
+  },
+  "homepage": "https://github.com/kyle-west/cron-actions#readme",
+  "dependencies": {
+    "dragon-router": "^1"
+  }
+}
